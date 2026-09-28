@@ -104,7 +104,7 @@ p
 {
     position: absolute;
     z-index: 2;
-    top: 150vh;
+    top: 110vh;
     width: 100vw;
     height: 25vh;
     display: flex;
@@ -122,6 +122,7 @@ p
         margin-bottom: 20px;
     }
   .faq-container {
+    top: 150vh;
     color: #e8eaed;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     max-width: 650px;

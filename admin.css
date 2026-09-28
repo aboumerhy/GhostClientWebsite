@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p
+{
+    color: white;
+}
+
+#title
+{
+    font-family: 'Open Sans';
+    font-size: 50;
+    margin-bottom: 50px;
+}
+
+.background
+{
+    height: 250vh; 
+    background: radial-gradient(circle,#000000, #101010);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: relative; 
+
+    #logo
+    {
+        position: absolute;
+        top: 42.5vh;
+        margin-bottom: 10px;
+        width: 7.5vh;
+        height: 7.5vh;
+    }
+
+    #submit-btn
+    {
+        position: absolute;
+        top: 54vh;
+        left: 48vw;
+        width: 7.5vh;
+        height: 3vh;
+        background: #151515;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+    #submit-btn:hover
+    {
+        background: radial-gradient(circle, #050505, #101010);
+    }
+    #submit-btn:active
+    {
+        background: radial-gradient(circle, #000000, #050505);
+    }
+
+    #pass-box
+    {
+        position: absolute;
+        top: 50vh;
+        left: 48vw;
+        width: 7.5vh;
+        height: 3vh;
+        background: #101010;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+    #pass-box:hover
+    {
+        background: radial-gradient(circle, #050505, #101010);
+    }
+    #pass-box:active
+    {
+        background: radial-gradient(circle, #000000, #050505);
+    }
+}

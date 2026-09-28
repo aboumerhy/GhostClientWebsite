@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p
+{
+    color: white;
+}
+
+#title
+{
+    font-family: 'Open Sans';
+    font-size: 50;
+    margin-bottom: 50px;
+}
+
+.background
+{
+    height: 250vh; 
+    background: radial-gradient(circle,#000000, #101010);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: relative; 
+
+    #logo
+    {
+        position: absolute;
+        top: 42vh;
+        margin-bottom: 10px;
+        width: 7.5vh;
+        height: 7.5vh;
+    }
+
+    #about-btn
+    {
+        position: absolute;
+        top: 50vh;
+        width: 80px;
+        height: 30px;
+        background: radial-gradient(circle, #000000, #101010);
+        color: white;
+        border-radius: 10px;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+    #about-btn:hover
+    {
+        background: radial-gradient(circle, #050505, #101010);
+    }
+    #about-btn:active
+    {
+        background: radial-gradient(circle, #000000, #050505);
+    }
+    #arrow-down
+    {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 90vh;
+        opacity: 0.5;
+
+        animation: arrowFadeOut linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0px 400px;
+    }
+
+    #frame
+    {
+        position: absolute;
+        right: 5%;
+    }
+    
+}
+@keyframes arrowFadeOut {
+    from {
+        bottom: 350px;
+        opacity: 0.5;
+    }
+    to {
+        bottom: 600px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#about
+{
+    position: absolute;
+    z-index: 2;
+    top: 110vh;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    .dropdown
+    {
+        font-family: 'Open Sans';
+        color: white;
+        max-width: 300px; 
+        overflow-wrap: break-word;
+        margin-bottom: 20px;
+    }
+  .faq-container {
+    color: #e8eaed;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    max-width: 650px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .faq-container h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .dropdown {
+    border-bottom: 1px solid #3c4043;
+  }
+
+  .dropdown summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+
+  .dropdown summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .arrow-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #2a2b2e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+
+  .arrow-circle svg {
+    width: 24px;
+    height: 24px;
+    fill: #bdc1c6;
+    transition: transform 0.2s ease;
+  }
+
+  .dropdown summary:hover .arrow-circle {
+    background-color: #35363a;
+  }
+
+  .dropdown[open] .arrow-circle svg {
+    transform: rotate(90deg);
+  }
+
+  .dropdown-content {
+    padding: 0 0 16px 0;
+    color: #bdc1c6;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .dropdown-content p {
+    margin: 0;
+  }
+}

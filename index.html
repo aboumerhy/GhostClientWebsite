@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/png" href="assets/logo.png">
+        <title>Ghost-Client</title>
+    </head>
+    <body>
+        <div class="background">
+            <img src="assets/logo.png" alt="ghost-client logo" id="logo">
+            <button onclick="document.getElementsByClassName('faq-container').item(0).scrollIntoView({ behavior: 'smooth' });" id="about-btn">about</button>
+            <img src="assets/arrow-down.svg" alt="arrow-down" id="arrow-down" onclick="document.getElementsByClassName('faq-container').item(0).scrollIntoView({ behavior: 'smooth' });">
+        </div>
+        <div id="about">
+            <div class="faq-container">
+              <h2>FAQ</h2>
+
+              <details class="dropdown">
+                <summary>
+                  <span>Is Ghost-Client safe?</span>
+                  <div class="arrow-circle">
+                    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </div>
+                </summary>
+                <div class="dropdown-content">
+                  <p>Yes!, Ghost-Client is completly safe and undetected, 0 bans have been issued to users using Ghost-Client.</p>
+                </div>
+              </details>
+          
+              <details class="dropdown">
+                <summary>
+                  <span>How Much does Ghost-Client cost?</span>
+                  <div class="arrow-circle">
+                    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </div>
+                </summary>
+                <div class="dropdown-content">
+                  <p>Ghost-Client's retail price is €8 or $9 USD.</p>
+                </div>
+              </details>
+          
+              <details class="dropdown">
+                <summary>
+                  <span>Where can I buy Ghost-Client?</span>
+                  <div class="arrow-circle">
+                    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </div>
+                </summary>
+                <div class="dropdown-content">
+                  <p>The list of resellers is on our discord in the where to buy channel.</p>
+                </div>
+              </details>
+            </div>
+
+        </div>
+    </body>
+</html>

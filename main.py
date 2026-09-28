@@ -3,7 +3,6 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 from functools import wraps
 
 URL = "ghostclient.dev"
-ADMIN_PASSWORD = "Jules123."
 
 app = Flask(__name__)
 

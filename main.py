@@ -36,7 +36,7 @@ def admin():
             return redirect("/")
     return render_template("adminLogin.html")
 
-@page()
+@page("www")
 def home():
     return render_template("index.html")
 

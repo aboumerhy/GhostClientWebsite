@@ -10,6 +10,10 @@ html, body {
     -ms-overflow-style: none;
 }
 
+a {
+  color: #1FB4FF;
+}
+
 html::-webkit-scrollbar, 
 body::-webkit-scrollbar {
     display: none;

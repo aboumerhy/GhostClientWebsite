@@ -24,7 +24,7 @@ def page(subdomain: str = "", route: str = "/", methods: list[str] | None = ["GE
 def verify(key, hwid):
     return jsonify({"valid": False, "resp": "Not Implemented", "key": key, "hwid": hwid})
 
-@page("cdn", "/latest")
+@page("www.", "/latest")
 def download():
     return redirect("github.com/aboumerhy/GhostClientWebsite/releases/latest/download/Ghost-Client.exe")
 

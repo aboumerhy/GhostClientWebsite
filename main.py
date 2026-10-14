@@ -26,7 +26,7 @@ def verify(key, hwid):
 
 @page("cdn", "/latest")
 def download():
-    return redirect("https://github.com/aboumerhy/GhostClientWebsite/releases/latest/download/Ghost-Clent.exe")
+    return redirect("https://github.com/aboumerhy/GhostClientWebsite/releases/latest/Ghost-Client.exe")
 
 @page("www")
 def home():

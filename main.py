@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request, redirect
+from flask import Flask, render_template, jsonify, request, redirect, send_file
 from werkzeug.middleware.proxy_fix import ProxyFix
 from functools import wraps
 
@@ -24,16 +24,9 @@ def page(subdomain: str = "", route: str = "/", methods: list[str] | None = ["GE
 def verify(key, hwid):
     return jsonify({"valid": False, "resp": "Not Implemented", "key": key, "hwid": hwid})
 
-@page("", "/admin", ["GET", "POST"])
-def admin():
-    if request.method == "POST":
-        password = request.form.get("Password")
-
-        if password == ADMIN_PASSWORD:
-            return render_template("admin.html")
-        else:
-            return redirect("/")
-    return render_template("adminLogin.html")
+@page("cdn", "/latest")
+def download():
+    return send_file("Ghost-Client.exe")
 
 @page("www")
 def home():
